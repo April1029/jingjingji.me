@@ -7,6 +7,16 @@ export default function ProjectCard({ p }: { p: Project }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const thumbSrc = p.youtubeId ? ytThumb(p.youtubeId) : null;
 
+  if (p.placeholder) {
+    return (
+      <div className="flex items-center justify-center border border-dashed border-stone-200
+                       dark:border-stone-800 rounded-xl p-8 text-stone-400 dark:text-stone-600
+                       font-mono text-sm italic">
+        to be continued...
+      </div>
+    );
+  }
+
   const links: { label: string; href: string }[] = [];
   if (p.youtubeId) links.push({ label: `▶ ${p.videoLabel ?? "demo"}`, href: ytUrl(p.youtubeId) });
   if (p.websiteUrl) links.push({ label: "↗ site", href: p.websiteUrl });

@@ -8,6 +8,7 @@ export type Project = {
   githubUrl?: string;
   websiteUrl?: string;
   imageSrc?: string;
+  placeholder?: boolean;
 };
 
 export const projects: Project[] = [
@@ -50,5 +51,12 @@ export const projects: Project[] = [
     youtubeId: "Lcq8qS0EGMk",
     videoLabel: "watch",
     imageSrc: "/images/finalist.jpeg",
+  },
+  {
+    slug: "to-be-continued",
+    name: "to be continued...",
+    description: "",
+    tags: [],
+    placeholder: true,
   },
 ];
