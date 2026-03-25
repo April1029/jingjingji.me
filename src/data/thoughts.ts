@@ -10,6 +10,15 @@ export type Thought = {
 export const thoughts: Thought[] = [
   {
     slug: "still-here",
+    date: "Mar 2026",
+    tag: "observation",
+    title: "The philosophy of cat living",
+    preview:
+      "Cats move through life with a softness I think people are always trying to return to.",
+    body: `Cats seem to know in their own quiet way, that a life does not have to be constantly proven to be meaningful. They rest when they are tired, linger where the light feels warm, and give their attention fully to small things. There is something gentle in that rhythm — a reminder that being present, comforted, and alive may already be enough.`,
+  },
+  {
+    slug: "still-here",
     date: "Feb 2026",
     tag: "design",
     title: "Calm is hard to design",
