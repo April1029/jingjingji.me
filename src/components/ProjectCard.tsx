@@ -5,7 +5,7 @@ import { ytThumb, ytUrl } from "@/lib/youtube";
 
 export default function ProjectCard({ p }: { p: Project }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const thumbSrc = p.youtubeId ? ytThumb(p.youtubeId) : null;
+  const thumbSrc = p.youtubeId ? ytThumb(p.youtubeId) : (p.imageSrc ?? null);
 
   if (p.placeholder) {
     return (
@@ -21,6 +21,7 @@ export default function ProjectCard({ p }: { p: Project }) {
   if (p.youtubeId) links.push({ label: `▶ ${p.videoLabel ?? "demo"}`, href: ytUrl(p.youtubeId) });
   if (p.websiteUrl) links.push({ label: "↗ site", href: p.websiteUrl });
   if (p.githubUrl) links.push({ label: "{ } code", href: p.githubUrl });
+  if (p.slidesUrl) links.push({ label: "⊞ slides", href: p.slidesUrl });
 
   return (
     <>
@@ -86,7 +87,7 @@ export default function ProjectCard({ p }: { p: Project }) {
                   {l.label}
                 </a>
               ))}
-              {p.imageSrc && (
+              {p.imageSrc && p.youtubeId && (
                 <button
                   onClick={(e) => { e.stopPropagation(); setLightboxOpen(true); }}
                   className="text-xs font-mono text-amber-700 dark:text-amber-400

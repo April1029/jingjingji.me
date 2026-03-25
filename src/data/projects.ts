@@ -10,6 +10,7 @@ export type Project = {
   imageSrc?: string;
   placeholder?: boolean;
   date?: string;
+  slidesUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -56,6 +57,18 @@ export const projects: Project[] = [
     videoLabel: "watch",
     imageSrc: "/images/finalist.jpeg",
     date: "2025 Mar",
+  },
+  {
+    slug: "greedy-cat",
+    name: "Greedy Cat",
+    description:
+      "A cat-themed twist on Snake, built in Python and inspired by the very real food rivalry between my cats, Ginkgo and Moonpie.",
+    tags: ["Pygame", "Game Development", "Interactive"],
+    githubUrl: "https://github.com/April1029/Greedy-Cat.git",
+    imageSrc: "/images/GreedyCat.jpg",
+    slidesUrl:
+      "https://docs.google.com/presentation/d/1R9w8FmeFv66-1T1JqsdbXutmoHQ3fXtMAj5gAV5afjk/edit?usp=sharing",
+    date: "2023 Sep. - 2023 Dec.",
   },
   {
     slug: "to-be-continued",
