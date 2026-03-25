@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import ThoughtItem from "@/components/ThoughtItem";
 import TimelineClient from "@/components/TimelineClient";
+import VisitorCount from "@/components/VisitorCount";
 import { projects } from "@/data/projects";
 import { thoughts } from "@/data/thoughts";
 
@@ -130,6 +131,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <footer className="pt-6 pb-2 border-t border-stone-200 dark:border-stone-800 flex justify-end">
+        <VisitorCount />
+      </footer>
     </main>
   );
 }
