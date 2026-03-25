@@ -49,7 +49,14 @@ export default function ProjectCard({ p }: { p: Project }) {
 
         {/* Body */}
         <div className="flex flex-col flex-1 p-4 gap-2.5">
-          <div className="text-base font-semibold">{p.name}</div>
+          <div className="flex items-start justify-between gap-2">
+            <div className="text-base font-semibold">{p.name}</div>
+            {p.date && (
+              <span className="text-xs font-mono text-stone-400 dark:text-stone-600 shrink-0 mt-0.5">
+                {p.date}
+              </span>
+            )}
+          </div>
           <div className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed flex-1 font-sans">
             {p.description}
           </div>
