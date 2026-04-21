@@ -15,13 +15,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "Iris",
+    name: "Iris",
+    description:
+      "A short film unfolds in a world where everything is made smooth, seamless, and right—until one thing isn’t. In that rupture, it becomes a story about loss, perception, and what it means to feel without correction.",
+    tags: ["AI-Filmmaking", "Experimental Media"],
+    youtubeId: "0Mi8d_qdR8M",
+    videoLabel: "watch",
+    date: "2026 Apr",
+  },
+  {
     slug: "now-ever",
     name: "Now & Ever Ephemeral",
     description:
       "An interactive portfolio project about memory, ephemerality, and the quiet emotional weight of passing moments.",
     tags: ["Experience Prototyping", "Digital Storytelling"],
     youtubeId: "Bl7FRA-TEWc",
-    websiteUrl: "https://now-and-ever.onrender.com/",
+    websiteUrl: "https://www.now-ever.live/",
     date: "2025 Aug",
   },
   {
@@ -62,13 +72,13 @@ export const projects: Project[] = [
     slug: "greedy-cat",
     name: "Greedy Cat",
     description:
-      "A cat-themed twist on Snake, built in Python and inspired by the very real food rivalry between my cats, Ginkgo and Moonpie.",
+      "A cat-themed twist on Snake Game, built in Python and inspired by the very real food rivalry between my cats, Ginkgo and Moonpie.",
     tags: ["Pygame", "Game Development", "Interactive"],
     githubUrl: "https://github.com/April1029/Greedy-Cat.git",
     imageSrc: "/images/GreedyCat.jpg",
     slidesUrl:
       "https://docs.google.com/presentation/d/1R9w8FmeFv66-1T1JqsdbXutmoHQ3fXtMAj5gAV5afjk/edit?usp=sharing",
-    date: "2023 Sep. - 2023 Dec.",
+    date: "2023 Sep - 2023 Dec",
   },
   {
     slug: "to-be-continued",
