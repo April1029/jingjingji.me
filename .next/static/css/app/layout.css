@@ -859,6 +859,15 @@ video {
   --tw-text-opacity: 1;
   color: rgb(28 25 23 / var(--tw-text-opacity, 1));
 }
+.underline {
+  text-decoration-line: underline;
+}
+.decoration-amber-400 {
+  text-decoration-color: #fbbf24;
+}
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -904,6 +913,9 @@ video {
 .hover\:text-amber-900:hover {
   --tw-text-opacity: 1;
   color: rgb(120 53 15 / var(--tw-text-opacity, 1));
+}
+.hover\:decoration-amber-600:hover {
+  text-decoration-color: #d97706;
 }
 .group:hover .group-hover\:scale-105 {
   --tw-scale-x: 1.05;

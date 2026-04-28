@@ -73,6 +73,20 @@ export default function Home() {
         <p className="text-base text-stone-400 dark:text-stone-600 leading-relaxed font-sans mb-7">
           Part portfolio. Part playground. Part organized curiosity.
         </p>
+        <p className="text-base text-stone-500 dark:text-stone-400 leading-relaxed font-sans mb-2">
+          I keep{" "}
+          <a
+            href="https://toomanytabs.fyi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-900 dark:text-stone-100 underline underline-offset-2 decoration-amber-400 hover:decoration-amber-600 transition-colors"
+          >
+            a second space
+          </a>{" "}
+          for the things that don't fit neatly here. Design tangents, working
+          notes, unfinished threads. It's probably a more honest picture of how
+          I actually think.
+        </p>
         <div className="flex gap-2 flex-wrap">
           {[
             { label: "github ↗", href: "https://github.com/April1029" },
