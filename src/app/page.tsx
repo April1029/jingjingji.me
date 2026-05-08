@@ -58,12 +58,17 @@ export default function Home() {
           Jingjing Ji
         </h1>
         <p className="text-base text-stone-500 dark:text-stone-400 leading-relaxed font-sans mb-2">
+          I build things at the edge of systems, memory, and feeling.
+        </p>
+        <p className="text-base text-stone-500 dark:text-stone-400 leading-relaxed font-sans mb-2">
           I'm a{" "}
           <span className="text-stone-900 dark:text-stone-100">
             developer and designer
           </span>{" "}
           who enjoys turning technical ideas into experiences people can
-          actually feel.
+          actually feel. I’m interested not only in what systems generate, but
+          in what people remember, imagine, or carry away from those
+          generations.
         </p>
         <p className="text-base text-stone-500 dark:text-stone-400 leading-relaxed font-sans mb-2">
           This is where I keep my{" "}
